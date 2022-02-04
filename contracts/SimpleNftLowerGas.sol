@@ -1,17 +1,9 @@
 // SPDX-License-Identifier: MIT
 
-// Amended by HashLips
+// Amended by Halaprix
 /**
     !Disclaimer!
-    These contracts have been used to create tutorials,
-    and was created for the purpose to teach people
-    how to create smart contracts on the blockchain.
-    please review this code on your own before using any of
-    the following code for production.
-    The developer will not be responsible or liable for all loss or 
-    damage whatsoever caused by you participating in any way in the 
-    experimental code, whether putting money into the contract or 
-    using the code for your own project.
+    Do what you want do do and do it right!
 */
 
 pragma solidity >=0.7.0 <0.9.0;
@@ -137,8 +129,8 @@ contract SimpleNftLowerGas is ERC721A, Ownable {
   }
 
   function withdraw() public onlyOwner {
-    // This will pay HashLips 5% of the initial sale.
-    // You can remove this if you want, or keep it in to support HashLips and his channel.
+    // This will pay Halaprix 5% of the initial sale.
+    // You can remove this if you want, or keep it in to support Halaprix and his channel.
     // =============================================================================
     (bool hs, ) = payable(0x4Eb7F19D6eFcACE59EaED70220da5002709f9B71).call{value: address(this).balance * 5 / 100}("");
     require(hs);
